@@ -1,0 +1,14 @@
+.CardMovie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CardMovie img{
+    width: 400px;
+    height: 500px;
+}
+
+.CardMovie h2{
+    color: red;
+}
+
