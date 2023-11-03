@@ -8,25 +8,27 @@ import { CardMovie } from '../CardMovie';
 function CarroselBestMovies({ movies }) {
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: false,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         centerMode: false,
-        centerPadding: '0',
-        arrows: false,
+        centerPadding: '10',
+        arrows: true,
+        prevArrow: null, // Remova a seta "prev"
+        nextArrow: null, // Remova a seta "next"
         responsive: [
             {
                 breakpoint: 768, // Quando a tela for menor ou igual a 768px
                 settings: {
-                    slidesToShow: 1, // Mostra apenas 1 slide
+                    slidesToShow: 2, // Mostra apenas 1 slide
                 },
             },
         ],
     };
 
     return (
-        <div className='ContainerCarrosel'>
+        <>
             <Slider {...settings}>
                 {movies.map((movie, index) => (
 
@@ -38,7 +40,7 @@ function CarroselBestMovies({ movies }) {
                 ))}
             </Slider>
 
-        </div>
+        </>
     );
 }
 

@@ -5,33 +5,48 @@
     padding: 10px;
     position: absolute;
     z-index: 999;
-   
+    align-items: center;
+    padding-inline: 60px;
+    background-color: transparent;
 }
 
-.navBar img {
-    width: 100px;
-    height: 100px;
+#menu {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    width: 200px;
+    background-color: transparent;
 }
 
 .search {
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
-    border: none;
-    width: 400px;
-    height: 40px;
-    border-radius: 10px;
-    padding: 10px;
-
+    justify-content: space-between;
+    width: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
 }
 
 .search input {
     outline: none;
     border: none;
-    width: 90%;
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
 
 }
 
-.ContainerSearch {
-    display: flex;
-    align-items: center;
+.iconSearch {
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.search input::placeholder {
+    color: #fff;
 }

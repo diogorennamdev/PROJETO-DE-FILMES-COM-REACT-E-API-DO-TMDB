@@ -1,5 +1,23 @@
-.ContainerCarrosel{
+/* Estilize o contêiner do carrossel */
+.ContainerCarrosel {
+    position: relative;
     width: 100%;
-    margin-top: 200px;
 }
 
+/* Estilize as setas de navegação */
+.slick-prev,
+.slick-next {
+    z-index: 2; 
+}
+
+/* Ajuste a posição das setas à esquerda e à direita */
+.slick-prev {
+    left: 30px; /* Posição à esquerda */
+    
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 30px;
+}
+.slick-next {
+    right: 30px; /* Posição à direita */
+}

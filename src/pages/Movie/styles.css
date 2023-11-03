@@ -1,0 +1,11 @@
+.ContainerDetails img{
+    width: 100%;
+    height: auto;
+}
+.ContainerDetails h3{
+    color: #fff;
+}
+
+.ContainerDetails p{
+    color: #fff;
+}

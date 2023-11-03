@@ -1,14 +1,34 @@
-.CardMovie{
+.CardMovie {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.CardMovie img{
-    width: 400px;
-    height: 500px;
-}
-
-.CardMovie h2{
-    color: red;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 40px;
+    color: #fff;
+    transition: transform 0.2s;
+    height: 450px;
+    text-decoration: none;
 }
 
+.CardMovie img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  
+}
+
+.CardMovie h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.CardMovie p,
+.CardMovie h3{
+    font-size: 16px;
+    margin-top: 1px;
+}
+.CardMovie:hover {
+    transform: scale(1.1);
+    
+}
