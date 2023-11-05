@@ -1,0 +1,13 @@
+.containerTitle {
+    color: #fff;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerMovies{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
