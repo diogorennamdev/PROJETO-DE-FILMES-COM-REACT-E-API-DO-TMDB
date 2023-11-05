@@ -4,9 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './styles.css';
 import { CardMovie } from '../CardMovie';
+import { useNavigate } from 'react-router-dom';
 
 function CarroselBestMovies({ movies }) {
-
+const navigation = useNavigate();
     const settings = {
         dots: true,
         infinite: false,
@@ -26,7 +27,9 @@ function CarroselBestMovies({ movies }) {
             },
         ],
     };
-
+    function OpenDetails(Id) {
+        navigation(`/search/movie/${Id}`)
+    }
     return (
         <>
             <Slider {...settings}>
@@ -35,6 +38,7 @@ function CarroselBestMovies({ movies }) {
                     <CardMovie
                         key={index}
                         movie={movie}
+                        funcao={() => OpenDetails(movie.id)}
                     />
 
                 ))}

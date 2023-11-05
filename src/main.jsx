@@ -13,8 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/movie/:id' element={<Movie />} />
         <Route path='/search' element={<Search />} />
+        <Route path='/search/movie/:id' element={<Movie />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

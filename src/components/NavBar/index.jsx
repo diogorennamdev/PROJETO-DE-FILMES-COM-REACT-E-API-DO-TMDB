@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import {  useNavigate,Link } from 'react-router-dom';
 import { BiSearchAlt2 } from "react-icons/bi";
 import './styles.css';
 import Logo from '../../assets/mdblogo.svg';
@@ -29,7 +29,10 @@ const NavBar = () => {
 
     return (
         <nav className="navBar">
+            <Link to={'/'}>
             <img src={Logo} id='logo' alt="" />
+
+            </Link>
             <div className='search'>
                 <input
                     type="text"
