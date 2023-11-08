@@ -12,7 +12,7 @@ const navigation = useNavigate();
         dots: false,
         infinite: false,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         centerMode: movies.length === 1,
         centerPadding: '10',
         arrows: true,
