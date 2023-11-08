@@ -32,7 +32,7 @@
     background-color: transparent;
 }
 
-.Text button{
+.Text button {
     width: 200px;
     height: 40px;
     border: none;
@@ -40,12 +40,51 @@
     color: #fff;
     border-radius: 10px;
 }
-.ContainerBestMovies{
+
+.ContainerBestMovies {
     color: #fff;
     width: 90%;
-   
+
 }
-.ContainerBestMovies h1{
+
+.ContainerBestMovies h1 {
     margin-top: 20px;
-   font-weight: bold;
+    font-weight: bold;
+}
+
+.SectionGenders {
+    color: #fff;
+    padding-top: 40px;
+}
+
+.SectionGenders h1 {
+    margin-left: 30px;
+}
+
+.GenreCarousels select {
+    outline: none;
+    margin-left: 20px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .Text {
+        top: 20%;
+        position:absolute;
+        left: 5%;
+        width: 80%;
+        bottom: 0;
+    }
+
+    .Text h2 {
+        font-size: 40px;
+      
+    }
+
+    .Text button{
+        margin-top: 40px;
+    }
 }

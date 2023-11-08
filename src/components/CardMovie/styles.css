@@ -5,31 +5,45 @@
     width: 300px;
     margin-top: 40px;
     color: #fff;
-    transition: transform 0.2s;
     height: 450px;
     text-decoration: none;
     margin-right: 40px;
+    transition: transform 0.3s ease-in-out; /* Transição suave com aceleração e desaceleração */
+   
 }
 
 .CardMovie img {
     width: 100%;
     height: 350px;
-    object-fit: contain;
-  
+    resize: horizontal;
+
 }
 
 .CardMovie h2 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    background-color: transparent;
 }
 
 .CardMovie p,
-.CardMovie h3{
+.CardMovie h3 {
     font-size: 16px;
     margin-top: 1px;
+    background-color: transparent !important;
 }
+
 .CardMovie:hover {
-    transform: scale(1.1);
-    
+  
+    border-radius: 10px;
+    padding: 10px;
+    transform: scale(1.05);
+    background-color: #BE123C;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .CardMovie{
+        margin-right: 0px;
+    }
 }

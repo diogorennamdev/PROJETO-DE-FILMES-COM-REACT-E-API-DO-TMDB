@@ -15,11 +15,10 @@ export const CardMovie = ({ movie,funcao }) => {
         <div onClick={() => funcao()} className='CardMovie'>
             <img src={imageUrl + movie.poster_path} alt={movie.title} />
             <h2>{movie.title}</h2>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between',backgroundColor:'transparent' }}>
                 <h3>{formattedDate}</h3>
-                <p> <FaStar style={{ color: 'yellow' }} /> {movie.vote_average}</p>
+                <p> <FaStar style={{ color: 'yellow',backgroundColor:'transparent' }} /> {movie.vote_average}</p>
             </div>
-
         </div>
     )
 }

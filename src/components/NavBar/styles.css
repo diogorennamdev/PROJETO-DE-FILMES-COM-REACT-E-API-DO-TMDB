@@ -50,3 +50,26 @@
 .search input::placeholder {
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    .navBar {
+        padding-inline: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #logo {
+        width: 100px;
+        background-color: transparent !important;
+    }
+
+    .search {
+        padding: 5px;
+        width: 70%;
+       
+    }
+   
+}

@@ -50,3 +50,9 @@
     color: #BE123C;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .ContainerDetails{
+        padding-inline: 20px;
+    }
+}

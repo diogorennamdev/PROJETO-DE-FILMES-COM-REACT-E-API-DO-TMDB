@@ -9,20 +9,32 @@ import { useNavigate } from 'react-router-dom';
 function CarroselBestMovies({ movies }) {
 const navigation = useNavigate();
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        centerMode: false,
+        slidesToScroll: 4,
+        centerMode: movies.length === 1,
         centerPadding: '10',
         arrows: true,
         prevArrow: null, // Remova a seta "prev"
         nextArrow: null, // Remova a seta "next"
         responsive: [
             {
+                breakpoint: 1200, // Quando a tela for menor ou igual a 1200px
+                settings: {
+                    slidesToShow: 3, // Mostra 3 slides
+                },
+            },
+            {
+                breakpoint: 992, // Quando a tela for menor ou igual a 992px
+                settings: {
+                    slidesToShow: 2, // Mostra 2 slides
+                },
+            },
+            {
                 breakpoint: 768, // Quando a tela for menor ou igual a 768px
                 settings: {
-                    slidesToShow: 2, // Mostra apenas 1 slide
+                    slidesToShow: 1, // Mostra 1 slide
                 },
             },
         ],
